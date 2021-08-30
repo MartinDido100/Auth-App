@@ -1,0 +1,28 @@
+<section>
+    <h1>DashBoard</h1>
+    <hr>
+    
+    <p>
+        Esta pagina solo funciona si estas autenticado
+    </p>
+    
+    <h4>User Info</h4>
+    <pre> {{ usuario | json }} </pre>
+    
+    <form (ngSubmit)="agregarFav()">
+        <span class="label-input100">Ingrese una pelicula favorita</span>
+        <input type="text"
+               name="favorito"
+               [(ngModel)]="favorito">
+        <button type="submit">Agregar</button>
+    </form>
+    
+    <ul>
+        <li *ngFor="let favorito of favoritos">
+            - {{ favorito | titlecase }} 
+            <span class="delete" (click)="borrarFavorito(favorito)">❌</span>
+        </li>
+    </ul>
+
+    <button (click)="logout()">Logout</button>
+</section>
