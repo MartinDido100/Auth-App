@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://auth-server-ten.vercel.app'
+  baseUrl: 'https://auth-server-ten.vercel.app/api'
 };
