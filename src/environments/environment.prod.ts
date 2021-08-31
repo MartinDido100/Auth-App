@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://curso-angular-favapp.herokuapp.com/api'
+  baseUrl: 'https://auth-server-ten.vercel.app'
 };
